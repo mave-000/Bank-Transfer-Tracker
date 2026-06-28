@@ -49,3 +49,27 @@ pip install pdfplumber
 ```
 
 ## Project Structure
+
+bank-transfer-tracker/
+
+├── extract.py        # PDF parser — run this first
+
+├── search.py         # Recipient search tool
+
+└── Transactions_To.csv  # Auto-generated after extract
+
+## Notes
+
+- Currently configured for OPay PDF statement format
+- PDF path is hardcoded in `extract.py` — update before running
+- CSV is overwritten each time `extract.py` runs
+
+## Disclaimer
+
+This tool is intended for personal financial analysis and
+educational purposes only. The developer is not liable for
+any misuse of this technology.
+
+## Author
+
+Built by Maverick
